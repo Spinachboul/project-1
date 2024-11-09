@@ -56,10 +56,8 @@ target = df_original['target']
 model = LogisticRegression(max_iter=1000)
 model.fit(features, target)
 
-# Rest of the code remains the same until create_input_dataframe function
 app = dash.Dash(__name__)
 
-# Layout remains the same as in previous version
 app.layout = html.Div([
     # Title and description remain the same
     html.H1("Cardiovascular Disease Prediction Bias Analysis", style={'textAlign': 'center'}),
@@ -235,7 +233,7 @@ def create_biased_dataset(df, age, maxheartrate, bp):
 )
 def update_predictions(n_clicks, age, bp, maxheartrate, oldpeak, vessels, chestpain):
     if n_clicks == 0:
-        return "Click 'Analyze Predictions' to see results", "Click 'Analyze Predictions' to see results"
+        return "Click 'Analyze Predictions' to see results"
     
     # Create input DataFrame
     input_data = create_input_dataframe(age, bp, maxheartrate, oldpeak, vessels, chestpain)
