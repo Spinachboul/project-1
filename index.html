@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Metrics</title>
+    <style>
+        table {
+            width: 60%;
+            margin: 25px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Model Metrics Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Accuracy</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1 Score</th>
+                <th>AUC</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Decision Tree</td>
+                <td>0.85</td>
+                <td>0.82</td>
+                <td>0.78</td>
+                <td>0.80</td>
+                <td>0.87</td>
+            </tr>
+            <tr>
+                <td>Random Forest</td>
+                <td>0.88</td>
+                <td>0.84</td>
+                <td>0.80</td>
+                <td>0.82</td>
+                <td>0.90</td>
+            </tr>
+            <tr>
+                <td>Logistic Regression</td>
+                <td>0.82</td>
+                <td>0.80</td>
+                <td>0.75</td>
+                <td>0.77</td>
+                <td>0.85</td>
+            </tr>
+            <tr>
+                <td>SVM</td>
+                <td>0.83</td>
+                <td>0.81</td>
+                <td>0.76</td>
+                <td>0.78</td>
+                <td>0.86</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
